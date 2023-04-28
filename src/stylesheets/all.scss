@@ -1,0 +1,14 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "helpers/variables";
+
+@import "components/grid";
+@import "components/layout";
+@import "components/banner";
+@import "components/objective";
+@import "components/experiences";
+@import "components/abilities";
+@import "components/projects";
+@import "components/contact";

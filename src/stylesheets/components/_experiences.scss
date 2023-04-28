@@ -1,0 +1,171 @@
+/* Experiences */
+.icon-style {
+  padding-top: 3px;
+  font-size: 24px;
+}
+/* Careers */
+.careers-container_row {
+  justify-content: center;
+}
+@include sm {
+  .careers-title {
+    margin-bottom: 20px;
+  }
+}
+.careers-content-item {
+  position: relative;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+/* the circle */
+.careers-content-item:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 7px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #95adbe;
+}
+/* the dashed line */
+.careers-content-item:after {
+  content: "";
+  position: absolute;
+  left: 4.7px;
+  top: 30px;
+  bottom: 0px;
+  border-left: 1px dashed #95adbe;
+}
+.content-item-title {
+  margin-bottom: 1rem;
+}
+.content-item-title-b {
+  font-size: 22px;
+  @include iphone6 {
+    font-size: 18px;
+  }
+}
+.content-item-title-s {
+  font-size: 18px;
+  color: #797979;
+  @include iphone6 {
+    font-size: 16px;
+  }
+}
+.careers-content-item-job-jobTitle {
+  font-size: 18px;
+  line-height: 16px;
+  color: #797979;
+  @include iphone6 {
+    font-size: 16px;
+  }
+}
+/* little gray dot */
+.careers-content-item-job-range {
+  position: relative;
+  padding-left: 20px;
+  font-size: 18px;
+  line-height: 16px;
+  color: #797979;
+  @include iphone6 {
+    font-size: 16px;
+    padding-left: 0px;
+  }
+}
+.careers-content-item-job-range:before {
+  content: "";
+  position: absolute;
+  margin-left: 10px;
+  top: 50%;
+  left: 0px;
+  transform: translateX(-50%);
+  width: 2.5px;
+  height: 2.5px;
+  border-radius: 50%;
+  background-color: #797979;
+  @include iphone6 {
+    display: none;
+  }
+}
+.content-item-jobRange {
+  display: flex;
+}
+@include pad {
+  .careers-content {
+    padding-left: 0px;
+  }
+  .content-item-jobRange {
+    margin-bottom: 20px;
+  }
+}
+.careers-content-item-jobContent {
+  margin-left: 25px;
+  font-size: 16px;
+}
+.careers-content-item-jobContent li {
+  padding-left: 2px;
+  margin-bottom: 10px;
+  line-height: 1.7;
+  text-align: left;
+  font-size: 18px;
+  @include iphone6 {
+    font-size: 16px;
+  }
+}
+@include iphone6 {
+  .content-item-jobRange {
+    display: block;
+  }
+  .careers-content-item-job-range {
+    margin-top: 10px;
+  }
+}
+
+/* Educations */
+.educations-container_row {
+  justify-content: center;
+}
+@include sm {
+  .educations-title {
+    margin-bottom: 20px;
+  }
+}
+.educations-content-item {
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+@include pad {
+  .educations-content {
+    padding-left: 0px;
+  }
+  .content-item-titleSection {
+    display: list-item !important;
+  }
+  .content-item-title {
+    margin-bottom: 0rem !important;
+  }
+  .content-item-title-s {
+    margin-bottom: 0.5rem !important;
+  }
+}
+
+.educations-content-item-range {
+  font-size: 18px;
+  line-height: 16px;
+  color: #797979;
+  @include pad {
+    margin-left: 48px;
+    margin-bottom: 1rem !important;
+  }
+  @include iphone6 {
+    font-size: 16px;
+  }
+}
+.educations-content-item_item {
+  padding-left: 2px;
+  font-size: 18px;
+  @include iphone6 {
+    font-size: 16px;
+  }
+}

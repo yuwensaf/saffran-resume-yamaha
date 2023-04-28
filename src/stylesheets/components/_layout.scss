@@ -1,0 +1,66 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica", "Arial", "Noto Sans TC", "LiHei Pro", "黑體-繁",
+    "微軟正黑體", sans-serif !important;
+}
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+.wrapper {
+  max-width: 100%;
+}
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.l-title {
+  padding: 80px 0 80px 0;
+  font-size: 48px;
+  font-family: "Open Sans", arial, sans-serif;
+  font-weight: 300;
+  color: $primary;
+  @include sm {
+    font-size: 40px;
+  }
+  @include iphone6 {
+    font-size: 32px;
+  }
+}
+.l-subtitle {
+  font-weight: 300;
+  font-size: 28px;
+  color: $primary;
+  margin-bottom: 24px;
+  @include sm {
+    font-size: 26px;
+  }
+  @include iphone6 {
+    font-size: 24px;
+  }
+}
+.l-section {
+  padding: 0 30px 80px 30px;
+}
+
+.animated {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1.5s;
+}
+.fadeIn {
+  opacity: 1;
+  transform: translateY(0);
+}
